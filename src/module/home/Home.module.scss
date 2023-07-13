@@ -1,0 +1,72 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+
+
+.home_container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_content{
+        width: 40%;
+        padding: 1rem 1.5rem;
+        background-color: aqua;
+        &_top{
+            text-align:center;
+            h1{
+                letter-spacing: 5px;
+                font-size: 2.5rem;
+            }
+        }
+        &_middle{
+            margin-top: 3rem;
+            padding: 1rem 0rem;
+            background-color: lightcoral;
+            &_topBox{
+                padding: .5rem 0rem;
+                display: flex;
+                // flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: paleturquoise;
+                &_Addbtn{
+                    background-color: black;
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: .3rem;
+                    border: none;
+                    text-align: center;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.viewModel{
+display: flex;
+flex-direction: column;
+margin: 1rem 2rem;
+gap:1rem;
+padding: 1.5rem 2rem;
+border: 1px solid #e6e8e9;
+input{
+    outline: none;
+    border: 1px solid #e6e8e9;
+    border-radius: .4rem;
+    padding: 1rem 1.2rem;
+}
+&_radiobox{
+    display: flex;
+    align-items: center;
+    input{
+        width: unset;
+        margin: 0rem 1rem;
+        cursor: pointer;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+}
+}
